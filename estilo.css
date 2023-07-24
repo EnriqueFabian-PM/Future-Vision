@@ -1,0 +1,700 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(prototipofuturevisionejemplo.png);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}
+
+.logo{
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 4%;
+    left: 8%;
+}
+
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+
+.banner-text h1{
+    font-size: 70px;
+    font-family: 'Kaushan Script',cursive;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding:12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: color 0.5s;
+}
+
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: #5d54d6;
+}
+
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position:fixed;
+    right: -250px;
+    top: 0;
+    background: #4da7fcfb;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #4da7fcfb;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/*--Mision--*/
+#MISION{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(mision.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:2%
+}
+
+.title-text{
+    text-align: center;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: #109e33;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#94ff7c,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title-text h1{
+    font-size: 50px;
+}
+
+.MISION-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.MISIONES{
+    flex-basis: 50%;
+}
+
+.MISIONES-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.MISIONES-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.MISIONES h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #05fc4f;
+}
+
+.MISIONES-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.MISION-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #109e33;
+    border: 1px solid #109e33;
+}
+
+.MISION-text p{
+    padding: 0 20px;
+    text-align: initial;
+    text-align: initial;
+    font-family: Helvetica;
+    font-size: large;
+    color: #fff;
+}
+
+@media screen and (max-width:770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+
+    .MISIONES{
+        flex-basis: 100%;
+    }
+
+    .MISIONES-img{
+        flex-basis: 100%;
+        margin: auto;
+    }
+
+    .MISIONES-img img{
+        width: 100%;
+    }
+}
+
+/*--Vision--*/
+#VISION{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(Vision.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:2%
+}
+
+.Vision-title-text{
+    text-align: center;
+}
+
+.Vision-title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: #e09900;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.Vision-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#ffbf35,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.Vision-title-text h1{
+    font-size: 50px;
+}
+
+.VISION-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.VISIONES{
+    flex-basis: 50%;
+}
+
+.VISIONES-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.VISIONES-img img{
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.VISIONES h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e09900;
+}
+
+.VISIONES-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.VISION-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #109e33;
+    border: 1px solid #109e33;
+}
+
+.VISION-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-family: Helvetica;
+    font-size: large;
+    color: #fff;
+}
+
+@media screen and (max-width:770px){
+    .Vision-title-text h1{
+        font-size: 35px;
+    }
+
+    .VISIONES{
+        flex-basis: 100%;
+    }
+
+    .VISIONES-img{
+        flex-basis: 100%;
+        margin: auto;
+    }
+
+    .VISIONES-img img{
+        width: 100%;
+    }
+}
+
+/*--Valores--*/
+#VALORES{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(Vision.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:2%
+}
+
+.Valores-title-text{
+    text-align: center;
+}
+
+.Valores-title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: #b10a2e;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.Valores-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#e61744,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.Valores-title-text h1{
+    font-size: 50px;
+}
+
+.VALOR-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.VALORES{
+    flex-basis: 50%;
+}
+
+.VALORES-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.VALORES-img img{
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.VALORES h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #b10a2e;
+}
+
+.VALORES-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.VALOR-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #109e33;
+    border: 1px solid #109e33;
+}
+
+.VALOR-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-family: Helvetica;
+    font-size: medium;
+    color: #fff;
+}
+
+@media screen and (max-width:770px){
+    .Valores-title-text h1{
+        font-size: 35px;
+    }
+
+    .VALORES{
+        flex-basis: 100%;
+    }
+
+    .VALORES-img{
+        flex-basis: 100%;
+        margin: auto;
+    }
+
+    .VALORES-img img{
+        width: 100%;
+    }
+}
+
+/*--Mision--*/
+#AVANCES{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(mision.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    padding:2%
+}
+
+.Avance-title-text{
+    text-align: center;
+}
+
+.Avance-title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: #bd148a;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.Avance-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#f11eb2,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.Avance-title-text h1{
+    font-size: 50px;
+}
+
+.AVANCE-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.AVANCES{
+    flex-basis: 50%;
+}
+
+.AVANCES-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.AVANCES-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.AVANCES h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #bd148a;
+}
+
+.AVANCES-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.AVANCE-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #bd148a;
+    border: 1px solid #bd148a;
+}
+
+.AVANCE-text p{
+    padding: 0 20px;
+    text-align: initial;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: larger;
+}
+
+@media screen and (max-width:770px){
+    .Avances-title-text h1{
+        font-size: 35px;
+    }
+
+    .AVANCES{
+        flex-basis: 100%;
+    }
+
+    .AVANCES-img{
+        flex-basis: 100%;
+        margin: auto;
+    }
+
+    .AVANCES-img img{
+        width: 100%;
+    }
+}
+
+/*--SSobre Nosotros--*/
+#SOBRENOSOTROS{
+    background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(sn.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:2%
+}
+
+.SN-title-text{
+    text-align: center;
+}
+
+.SN-title-text p{
+    margin: auto;
+    font-size: 30px;
+    color: #0760d4;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.SN-title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#378bf8,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.SN-title-text h1{
+    font-size: 50px;
+}
+
+.SN-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.SN{
+    flex-basis: 50%;
+}
+
+.SN-img{
+    flex-basis: 50%;
+    margin: auto;
+   
+}
+
+.SN-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.SN h1{
+    text-align: right;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #0760d4;
+}
+
+.SN-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.SN-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #109e33;
+    border: 1px solid #109e33;
+}
+
+.SN-text p{
+    padding: 0 20px;
+    text-align: initial;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: medium;
+}
+
+@media screen and (max-width:770px){
+    .SN-title-text h1{
+        font-size: 35px;
+    }
+
+    .SN{
+        flex-basis: 100%;
+    }
+
+    .SN-img{
+        flex-basis: 100%;
+        margin: auto;
+    }
+
+    .SN-img img{
+        width: 100%;
+    }
+}
+
+
+
+
+
